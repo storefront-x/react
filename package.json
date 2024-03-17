@@ -31,6 +31,7 @@
     "@storefront-x/core": "*"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@storefront-x/testing": "*",
     "@storefront-x/tooling": "*",
     "cross-env": "^7.0.3"
