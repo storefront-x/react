@@ -1,7 +1,5 @@
-import { useState } from 'react'
+import Page from '#ioc/components/Page'
 
 export default function App() {
-  const [count, setCount] = useState(0)
-
-  return <button onClick={() => setCount(count + 1)}>Click me: {count}!</button>
+  return <Page />
 }
