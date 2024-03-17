@@ -37,3 +37,30 @@ test('reactivity of basic React application', async ({ page }) => {
     },
   )
 })
+
+test('overridable Page component', async ({ page }) => {
+  await makeProject(
+    {
+      modules: [
+        '@storefront-x/base',
+        '@storefront-x/react',
+        [
+          'my-module',
+          {
+            components: {
+              'Page.tsx': `
+                export default function Page() {
+                  return <h1>Overrided!</h1>
+                }
+              `,
+            },
+          },
+        ],
+      ],
+    },
+    async ({ url }) => {
+      await page.goto(url)
+      await expect(page.getByText('Overrided!')).toBeDefined()
+    },
+  )
+})
