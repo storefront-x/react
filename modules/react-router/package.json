@@ -1,0 +1,12 @@
+{
+  "name": "@storefront-x/react-router",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.22.3"
+  }
+}
