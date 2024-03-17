@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { makeProject } from '@storefront-x/testing'
 
-test.only('index page', async ({ page }) => {
+test('index page', async ({ page }) => {
   await makeProject(
     {
       modules: [
@@ -30,7 +30,7 @@ test.only('index page', async ({ page }) => {
   )
 })
 
-test.only('custom page', async ({ page }) => {
+test('custom page', async ({ page }) => {
   await makeProject(
     {
       modules: [
@@ -59,7 +59,7 @@ test.only('custom page', async ({ page }) => {
   )
 })
 
-test.only('404 page', async ({ page }) => {
+test('404 page', async ({ page }) => {
   await makeProject(
     {
       modules: [
@@ -88,7 +88,7 @@ test.only('404 page', async ({ page }) => {
   )
 })
 
-test.only('basic navigatiom', async ({ page }) => {
+test('basic navigatiom', async ({ page }) => {
   await makeProject(
     {
       modules: [
@@ -103,7 +103,7 @@ test.only('basic navigatiom', async ({ page }) => {
                 import Link from '#ioc/components/Link'
 
                 export default function A() {
-                  return <Link href="/b">To b</Link>
+                  return <Link to="/b">To b</Link>
                 }
               `,
               'b.tsx': `
