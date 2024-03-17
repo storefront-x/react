@@ -1,0 +1,48 @@
+name: Core
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{github.ref }}-${{ github.job }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  yarn-ubuntu:
+    uses: ./.github/workflows/yarn.yml
+    with:
+      os: ubuntu-latest
+
+  yarn-windows:
+    uses: ./.github/workflows/yarn.yml
+    with:
+      os: windows-latest
+
+  playwright:
+    strategy:
+      fail-fast: false
+      matrix:
+        count: [1, 2, 3]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    needs: [yarn-ubuntu, yarn-windows]
+    name: playwright shard ${{ matrix.count }} (${{ matrix.os }})
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Restore cached node_modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+      - name: Run Playwright tests - shard ${{ matrix.count }} of 3
+        run: |
+          npx playwright install chromium
+          npx playwright test --shard=${{ matrix.count }}/3 --forbid-only
