@@ -1,0 +1,38 @@
+{
+  "name": "storefront-x",
+  "version": "0.1.1",
+  "description": "Storefront X",
+  "main": "index.js",
+  "repository": "https://github.com/storefront-x/storefront-x",
+  "author": "Storefront-x",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@3.2.1",
+  "workspaces": [
+    "./modules/*"
+  ],
+  "scripts": {
+    "test:unit": "npx vitest run",
+    "test:playwright": "npx playwright test",
+    "lint": "npx eslint --ext .js,.ts,.jsx,.tsx .",
+    "lint:prod": "cross-env NODE_ENV=production npx eslint --ext .js,.ts,.jsx,.tsx .",
+    "dev": "sfx dev",
+    "build": "sfx build",
+    "serve": "sfx serve",
+    "make": "sfx make",
+    "cypress": "npx cypress",
+    "docs:dev": "npx vitepress dev docs",
+    "docs:build": "npx vitepress build docs",
+    "docs:serve": "npx vitepress serve docs"
+  },
+  "dependencies": {
+    "@storefront-x/base": "*",
+    "@storefront-x/core": "*"
+  },
+  "devDependencies": {
+    "@storefront-x/testing": "*",
+    "@storefront-x/tooling": "*",
+    "cross-env": "^7.0.3"
+  }
+}

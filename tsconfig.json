@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "paths": {
+      "#ioc/*": ["./.sfx/ioc/*"],
+      "~/*": ["./*"]
+    },
+    "types": ["node", "cypress", "vitest/globals", "cypress-wait-until"]
+  },
+  "include": ["modules/**/*", "local_modules/**/*", "cypress/**/*", ".sfx/**/*"],
+  "exclude": [".sfx/vite"]
+}
