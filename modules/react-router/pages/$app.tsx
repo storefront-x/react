@@ -1,5 +1,5 @@
-import { PropsWithChildren } from 'react'
+import Outlet from '#ioc/components/router/Outlet'
 
-export default function $app({ children }: PropsWithChildren) {
-  return children
+export default function $app() {
+  return <Outlet />
 }
