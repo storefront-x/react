@@ -1130,16 +1130,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storefront-x/base@npm:^1.25.4":
-  version: 1.25.4
-  resolution: "@storefront-x/base@npm:1.25.4"
-  checksum: 10/2e585608cbb948859ef61dde846fafb68ec4785da98415a58d71bf3d2f8749d87027e634ebd276f12fed075e848db252a46add892e7dc468b70907f98ca5d721
+"@storefront-x/base@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "@storefront-x/base@npm:1.27.0"
+  dependencies:
+    "@types/lodash-es": "npm:^4.17.12"
+  checksum: 10/541d838d1a7ad2a3f8ccab98242474af154fec6f55397647d599a6d315c20b84df391694b84c379b242a9c9ddd7e6f14dfc78ec290458919226f6d312af83012
   languageName: node
   linkType: hard
 
-"@storefront-x/core@npm:^1.25.4":
-  version: 1.25.4
-  resolution: "@storefront-x/core@npm:1.25.4"
+"@storefront-x/core@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "@storefront-x/core@npm:1.27.0"
   dependencies:
     chokidar: "npm:^3.5.3"
     compression: "npm:^1.7.4"
@@ -1163,7 +1165,7 @@ __metadata:
     youch: "npm:^3.3.3"
   bin:
     sfx: sfx.js
-  checksum: 10/22bb7689dd52a2d4503741102e9bbd80db77aea2b6a1196e15aa8c99cf0e3f63c6da87b51c0b013a07eeda27f271eeb5c415fcc8e93c62d87f8d77323be4fca0
+  checksum: 10/e7575de088387a517e2a3ce2142f1fed99f40b30544b23252f3d3365e65201a9ce0786ba2d8b8d8d807e52674a17e8b3d9aec52a05672b2bda0fa804958095af
   languageName: node
   linkType: hard
 
@@ -1187,21 +1189,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storefront-x/testing@npm:^1.25.4":
-  version: 1.25.4
-  resolution: "@storefront-x/testing@npm:1.25.4"
+"@storefront-x/testing@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "@storefront-x/testing@npm:1.27.0"
   dependencies:
     "@playwright/test": "npm:1.41.2"
     get-port: "npm:^7.0.0"
     jsdom: "npm:^24.0.0"
     vitest: "npm:^1.2.2"
-  checksum: 10/41ac8af7a9699c6953b55bd94c0ce0834782d4aa7d951c2a9a658c3c9a4a95c1fb7a050365d38451481abed9bf4d96ca84c49dd1b90a3a60cb3b4030dec656c3
+  checksum: 10/92bc29b5a0e880a24e07bf5a498c6e2527f135ddaa871cb15c198f582a63fa54fc46cf8491121add762209ddea874a3cc97627a0aff95ae2fb2d096798c47953
   languageName: node
   linkType: hard
 
-"@storefront-x/tooling@npm:^1.25.4":
-  version: 1.25.4
-  resolution: "@storefront-x/tooling@npm:1.25.4"
+"@storefront-x/tooling@npm:^1.27.0":
+  version: 1.27.0
+  resolution: "@storefront-x/tooling@npm:1.27.0"
   dependencies:
     "@types/yargs": "npm:^17.0.32"
     "@typescript-eslint/eslint-plugin": "npm:^6.20.0"
@@ -1215,7 +1217,7 @@ __metadata:
     prettier: "npm:^3.2.4"
     typescript: "npm:^5.3.3"
     vitepress: "npm:1.0.0-rc.20"
-  checksum: 10/df40922a51e66d3e3f861cf5fd7539dcc994b5dac476d0a035da2d6da024f033a1b1708da5bedae128279a2fc73a0efbd2682b975756459120c77914ab205a30
+  checksum: 10/030b1294856e5261d1b5a78a8ad07942c481687294ebbfd592a38c8b641c065ce7326d3901da5d4a5b4ab07d88c98c5a87097cea7409f73d6b7f4cb58fe47fba
   languageName: node
   linkType: hard
 
@@ -1388,6 +1390,22 @@ __metadata:
   version: 3.0.3
   resolution: "@types/linkify-it@npm:3.0.3"
   checksum: 10/a734becc4e7476833b0e6951ec133c006a34809639c722d3e28b7cf88f5f6ccbb433f195788be5e56209b1e9e6e0778879291dd2db401acee3bb585c44dcc329
+  languageName: node
+  linkType: hard
+
+"@types/lodash-es@npm:^4.17.12":
+  version: 4.17.12
+  resolution: "@types/lodash-es@npm:4.17.12"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 10/56b9a433348b11c31051c6fa9028540a033a08fb80b400c589d740446c19444d73b217cf1471d4036448ef686a83e8cf2a35d1fadcb3f2105f26701f94aebb07
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.17.0
+  resolution: "@types/lodash@npm:4.17.0"
+  checksum: 10/2053203292b5af99352d108656ceb15d39da5922fc3fb8186e1552d65c82d6e545372cc97f36c95873aa7186404d59d9305e9d49254d4ae55e77df1e27ab7b5d
   languageName: node
   linkType: hard
 
@@ -7470,10 +7488,10 @@ __metadata:
   resolution: "storefront-x@workspace:."
   dependencies:
     "@changesets/cli": "npm:^2.27.1"
-    "@storefront-x/base": "npm:^1.25.4"
-    "@storefront-x/core": "npm:^1.25.4"
-    "@storefront-x/testing": "npm:^1.25.4"
-    "@storefront-x/tooling": "npm:^1.25.4"
+    "@storefront-x/base": "npm:^1.27.0"
+    "@storefront-x/core": "npm:^1.27.0"
+    "@storefront-x/testing": "npm:^1.27.0"
+    "@storefront-x/tooling": "npm:^1.27.0"
     cross-env: "npm:^7.0.3"
   languageName: unknown
   linkType: soft

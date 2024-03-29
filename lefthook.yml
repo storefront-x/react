@@ -4,3 +4,5 @@ pre-commit:
     eslint:
       glob: '*.{js,ts,jsx,tsx}'
       run: yarn cross-env NODE_ENV=production npx eslint {staged_files}
+    typecheck:
+      run: npx tsc --noEmit
