@@ -1,5 +1,12 @@
 # @storefront-x/react-router
 
+## 0.1.1
+
+### Patch Changes
+
+- Fix parametrized routes
+- b2ca614: Add support for parametrized pages
+
 ## 0.1.0
 
 ### Minor Changes
