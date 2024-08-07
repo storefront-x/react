@@ -1130,18 +1130,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storefront-x/base@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "@storefront-x/base@npm:1.27.0"
+"@storefront-x/base@npm:^1.30.1":
+  version: 1.30.1
+  resolution: "@storefront-x/base@npm:1.30.1"
   dependencies:
     "@types/lodash-es": "npm:^4.17.12"
-  checksum: 10/541d838d1a7ad2a3f8ccab98242474af154fec6f55397647d599a6d315c20b84df391694b84c379b242a9c9ddd7e6f14dfc78ec290458919226f6d312af83012
+  checksum: 10/0f860517c51ef0cedd9ea32c4deae351e7f656b54d36afe2558ff35f2ea0a6d1bda8b824c33670e7486e62f74dc4b27f0b216a484e98b14401d2a8803bef029e
   languageName: node
   linkType: hard
 
-"@storefront-x/core@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "@storefront-x/core@npm:1.27.0"
+"@storefront-x/core@npm:^1.30.1":
+  version: 1.30.1
+  resolution: "@storefront-x/core@npm:1.30.1"
   dependencies:
     chokidar: "npm:^3.5.3"
     compression: "npm:^1.7.4"
@@ -1160,12 +1160,12 @@ __metadata:
     rollup: "npm:^4.9.6"
     rollup-plugin-visualizer: "npm:^5.12.0"
     serve-static: "npm:^1.15.0"
-    vite: "npm:^5.0.12"
+    vite: "npm:5.0.12"
     yargs: "npm:^17.7.2"
     youch: "npm:^3.3.3"
   bin:
     sfx: sfx.js
-  checksum: 10/e7575de088387a517e2a3ce2142f1fed99f40b30544b23252f3d3365e65201a9ce0786ba2d8b8d8d807e52674a17e8b3d9aec52a05672b2bda0fa804958095af
+  checksum: 10/53d8bb07114f860f2d32d651f67745e33eb6377db7f421b42fcd6dae610dbf0ee248d1ca8a9f2b1d88572266779f3024192512aafcf66e392b6beda2d8c2e264
   languageName: node
   linkType: hard
 
@@ -1189,21 +1189,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storefront-x/testing@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "@storefront-x/testing@npm:1.27.0"
+"@storefront-x/testing@npm:^1.30.1":
+  version: 1.30.1
+  resolution: "@storefront-x/testing@npm:1.30.1"
   dependencies:
     "@playwright/test": "npm:1.41.2"
     get-port: "npm:^7.0.0"
     jsdom: "npm:^24.0.0"
     vitest: "npm:^1.2.2"
-  checksum: 10/92bc29b5a0e880a24e07bf5a498c6e2527f135ddaa871cb15c198f582a63fa54fc46cf8491121add762209ddea874a3cc97627a0aff95ae2fb2d096798c47953
+  checksum: 10/1a52be1310d09b5ab129762a5792f53ac398aa56798cbc56258efa17739cc32e963ab942f4d888aea732884a58640d560340bcb61aaa1deaa67ef45dfdd2b6f7
   languageName: node
   linkType: hard
 
-"@storefront-x/tooling@npm:^1.27.0":
-  version: 1.27.0
-  resolution: "@storefront-x/tooling@npm:1.27.0"
+"@storefront-x/tooling@npm:^1.30.1":
+  version: 1.30.1
+  resolution: "@storefront-x/tooling@npm:1.30.1"
   dependencies:
     "@types/yargs": "npm:^17.0.32"
     "@typescript-eslint/eslint-plugin": "npm:^6.20.0"
@@ -1217,7 +1217,7 @@ __metadata:
     prettier: "npm:^3.2.4"
     typescript: "npm:^5.3.3"
     vitepress: "npm:1.0.0-rc.20"
-  checksum: 10/030b1294856e5261d1b5a78a8ad07942c481687294ebbfd592a38c8b641c065ce7326d3901da5d4a5b4ab07d88c98c5a87097cea7409f73d6b7f4cb58fe47fba
+  checksum: 10/b0fe5916e6d6281890a09a7ddb1ca3eaadb331ad399a45d9f747511d38c77e1ce68ee12d53e45390b080aa6bd5194d8514deab063763e4594431923ef91c94c9
   languageName: node
   linkType: hard
 
@@ -7488,10 +7488,10 @@ __metadata:
   resolution: "storefront-x@workspace:."
   dependencies:
     "@changesets/cli": "npm:^2.27.1"
-    "@storefront-x/base": "npm:^1.27.0"
-    "@storefront-x/core": "npm:^1.27.0"
-    "@storefront-x/testing": "npm:^1.27.0"
-    "@storefront-x/tooling": "npm:^1.27.0"
+    "@storefront-x/base": "npm:^1.30.1"
+    "@storefront-x/core": "npm:^1.30.1"
+    "@storefront-x/testing": "npm:^1.30.1"
+    "@storefront-x/tooling": "npm:^1.30.1"
     cross-env: "npm:^7.0.3"
   languageName: unknown
   linkType: soft
@@ -8107,6 +8107,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite@npm:5.0.12, vite@npm:^5.0.0":
+  version: 5.0.12
+  resolution: "vite@npm:5.0.12"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.32"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/ed0bb26a0d0c8e1dae0b70af9e36adffd7e15d80297443fe4da762596dc81570bad7f0291f590a57c1553f5e435338d8c7ffc483bd9431a95c09d9ac90665fad
+  languageName: node
+  linkType: hard
+
 "vite@npm:^4.4.9":
   version: 4.5.2
   resolution: "vite@npm:4.5.2"
@@ -8144,46 +8184,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10/3feb39f8da038fb2b1ad074c19a9579c263c1d7a872c5c6e0269b82d67805bb8c93cf9fc393e852807483ae9a918b1ac2861c72f73ee92fb3935ea68333a2cf7
-  languageName: node
-  linkType: hard
-
-"vite@npm:^5.0.0, vite@npm:^5.0.12":
-  version: 5.0.12
-  resolution: "vite@npm:5.0.12"
-  dependencies:
-    esbuild: "npm:^0.19.3"
-    fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.32"
-    rollup: "npm:^4.2.0"
-  peerDependencies:
-    "@types/node": ^18.0.0 || >=20.0.0
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.4.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10/ed0bb26a0d0c8e1dae0b70af9e36adffd7e15d80297443fe4da762596dc81570bad7f0291f590a57c1553f5e435338d8c7ffc483bd9431a95c09d9ac90665fad
   languageName: node
   linkType: hard
 
