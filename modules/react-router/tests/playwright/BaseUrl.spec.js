@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { makeProject } from '@storefront-x/testing'
 
-test.only('index page', async ({ page }) => {
+test('index page', async ({ page }) => {
   await makeProject(
     {
       baseUrl: '/web',
@@ -31,7 +31,7 @@ test.only('index page', async ({ page }) => {
   )
 })
 
-test.only('navigation', async ({ page }) => {
+test('navigation', async ({ page }) => {
   await makeProject(
     {
       baseUrl: '/web',
