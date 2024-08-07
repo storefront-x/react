@@ -1,5 +1,11 @@
 # @storefront-x/react-router
 
+## 0.2.0
+
+### Minor Changes
+
+- bfdc51e: Add support for baseUrl
+
 ## 0.1.1
 
 ### Patch Changes
